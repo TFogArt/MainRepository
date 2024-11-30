@@ -1,0 +1,32 @@
+​<!DOCTYPE html>
+<html>
+<head>
+       <meta charset="utf-8"> 
+       <title>𝙃𝙖𝙫𝙚 𝘼 𝙉𝙞𝙘𝙚 𝘿𝙖𝙮.</title>
+      <style>
+       body, html {
+            height: 100%;
+            margin: 0;
+        }
+       body {
+           background-color:black
+        }
+    </style>
+</head>
+<body>
+<h2><font color="yellow"><center><b>Picture in Picture Tool Night Version</b><center></font></h2>
+<hr color="#EEFF00">
+<input type="file" id="file" onchange="onInputFileChange()">
+<br/>
+<video id="video_id"  width="965" height="550" controls autoplay loop>画中画</video>
+<script>
+function onInputFileChange() {
+      var file = document.getElementById('file').files[0];
+      var url = URL.createObjectURL(file);
+      console.log(url);
+   document.getElementById("video_id").src = url;
+}
+</script>
+<p>𝙃𝙖𝙫𝙚 𝘼 𝙉𝙞𝙘𝙚 𝘿𝙖𝙮.<p>
+</body>
+</html>

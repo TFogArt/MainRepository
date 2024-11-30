@@ -1,0 +1,37 @@
+//将下列代码中的“背景URL”及“头像URL”更换为对应的URL
+let widget = new ListWidget();
+
+let backgroundImgURL = "背景URL";
+let backgroundImgReq = new Request(backgroundImgURL);
+let backgroundImg = await backgroundImgReq.loadImage();
+widget.backgroundImage = backgroundImg;
+
+let imgURL = "头像URL";
+let imgReq = new Request(imgURL);
+let img = await imgReq.loadImage();
+let imgElement = widget.addImage(img);
+imgElement.imageSize = new Size(112, 112); 
+imgElement.cornerRadius = 12; 
+
+imgElement.borderColor = Color.white(); 
+imgElement.borderWidth = 2; 
+
+let textStack = widget.addStack();
+textStack.layoutVertically();
+
+let text1 = textStack.addText("Tipcy");
+text1.textColor = Color.white();
+text1.font = Font.heavyRoundedSystemFont(22);
+
+textStack.addSpacer(0);
+
+let text2 = textStack.addText("Widget Pro");
+text2.textColor = Color.white();
+text2.font = Font.heavyRoundedSystemFont(12);
+
+if (config.runsInWidget) {
+    Script.setWidget(widget);
+} else {
+    widget.presentMedium();
+}
+Script.complete();

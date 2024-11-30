@@ -1,4 +1,5 @@
 //将下列代码中的“背景URL”及“头像URL”更换为对应的URL
+//此代码制作的小组件界面兼容小号组件
 let widget = new ListWidget();
 
 let backgroundImgURL = "背景URL";

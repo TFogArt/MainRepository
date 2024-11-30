@@ -1,4 +1,0 @@
-关于图片存储库
-可以通过SM存储或iCloud存储
--SM的官网为SM.MS或SM.app，或者前往iOS的App Store下载。简单注册后即可使用。如需获取URL用于小工具或小组件，软件内打开图片后屏幕底部即有URL。
--iCloud，即苹果的iCloud云空间，官网为iCloud.com。登录iCloud网站时的Apple ID不会影响本机ID的其他诸如订阅，下载等的功能，且与原本的iCloud存储不冲突，可以选择信任浏览器并保持登录状态。登录后打开iCloud云盘即可存储。如若图片需用于作为Scriptable小组件的URL，则可能会出现无法显示的问题。如需获取URL用于小工具或小组件，打开图片，当前的网址链接即是URL。
